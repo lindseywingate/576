@@ -3,7 +3,7 @@ import java.awt.image.*;
 import java.io.*;
 import javax.swing.*;
 
-public image VideoPlayer {
+public class VideoPlayer {
 
     private void showVideoFrame() {
         JFrame frame;
@@ -15,7 +15,9 @@ public image VideoPlayer {
        frame = new JFrame();
        GridBagLayout gLayout = new GridBagLayout();
        frame.getContentPane().setLayout(gLayout);
-    
+       //lbIm1 = new JLabel(new ImageIcon(imgOne));
+
+
        GridBagConstraints c = new GridBagConstraints();
        c.fill = GridBagConstraints.HORIZONTAL;
        c.anchor = GridBagConstraints.CENTER;
@@ -26,7 +28,7 @@ public image VideoPlayer {
        c.fill = GridBagConstraints.HORIZONTAL;
        c.gridx = 0;
        c.gridy = 1;
-       frame.getContentPane().add(lbIm1, c);
+       //frame.getContentPane().add(lbIm1, c);
     
        frame.pack();
        frame.setVisible(true);
